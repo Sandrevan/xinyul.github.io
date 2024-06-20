@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Xinyu Liu</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="jiatongy">
+  <meta name="keywords" content="Jiatong Yu, Jiatong Yu Princeton, jiatong princeton">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="jiatongy homepage">
+
+  <!-- <link rel="icon" type="image/png" href="https://cs.princeton.edu/~jiatongy/images/favicon-32x32.png" sizes="64x32"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Syne|Arimo|Open+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />-->
+  <script>
+    // Immediately set the theme based on localStorage
+    document.documentElement.style.display = 'none'; // Hide the page content initially
+    document.addEventListener('DOMContentLoaded', () => {
+        const nightMode = localStorage.getItem('nightMode');
+        if (nightMode === 'enabled') {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.add('light-mode');
+        }
+        document.documentElement.style.display = ''; // Show the content after setting the theme
+    });
+</script>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <link href="css/style.css" rel="stylesheet" media="screen" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="menu">
+    <div class="container">
+    <ul>
+        <li><a href="https://jiatong-yu.github.io/" class="special">Home</a></li>
+        <!-- <li><a href="./publications.html" class="normal">Publications</a></li> -->
+        <li><a href="./misc.html" class="normal">Blog</a></li>
+        <!-- <li><a href="#misc" class="normal">Misc</a></li> -->
+        <button id="night-mode-toggle" class="toggle-button">
+          <span id="moon-icon">
+            &#9680;
+            </span>
+            <!-- <span id="sun-icon" class="material-icons"> -->
+              <span id="sun-icon">
+                &#9680;
+              </span>
+      </button>
+    </ul>
+  </div>
+</div>
+  <div class="container">
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3">
+
+        <a>
+          <div class="profile-picture">
+            <!-- <img class="img-responsive" style="max-height:400px;" src="images/profile_round.png" /> -->
+          </div>
+      </a>
+        
+        <!-- <a>
+          <img class="img-responsive" style="max-height:400px;" src="images/profile_round.png" />
+        </a> -->
+        <p>
+          <!-- <p style="text-align: center;">
+              <a href="https://cs.princeton.edu/~jiatongy/jiatong_cv">[Curriculum Vitae]</a>
+                
+              </p>
+          </p> -->
+         <p style="text-align: center;">
+          <!-- <a><img
+              src="./images/logos/gscholar.png" style="max-height:20px;" ></a>  -->
+              <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=yl2t9GkAAAAJ">[Google Scholar]</a>
+            </p>
+        </p>
+        <!-- <p><center>
+          <a href="https://twitter.com/jiatongy_" title="twitter"><img src="./images/logos/twitter.png"
+            style="max-height:20px;" ></a>
+              Twitter
+            </center>
+            </p>
+        <p><center>
+          <a href="https://github.com/jiatlskajf" title="github"><img src="./images/logos/github.png"
+            style="max-height:20px;"  ></a> 
+              Github
+        </center> -->
+        </p>
+        
+      
+      </div>
+
+      <div class="col-sm-9">
+        <div class="clearfix visible-xs-block"></div>
+        <h1>Jiatong Yu</h1>
+        
+        <p style="font-size: 16px">Hi! I'm a first-year PhD student at Caltech. <a href="https://princeton-nlp.github.io/" target="_blank">Princeton NLP Group</a>. I'm part of the amazing and supportive <a href="https://www.cs.princeton.edu/~danqic/lab.html" target="_blank">lab</a> led by <a href="https://www.cs.princeton.edu/~danqic/" target="_blank">Prof. Danqi Chen</a>. I'm also working closely with <a href="https://www.cs.princeton.edu/~arora/">Prof. Sanjeev Arora </a> and <a href="https://www.cs.princeton.edu/~li/">Prof. Kai Li</a>.</p>
+        <!-- <hr> -->
+        <p style="font-size: 16px">
+        I'm interested in large foundation models. Some objectives include...
+        <ul>
+          <li class="special"> <u>Reasoning</u>: 
+            <!-- We want an information-processing device that can selectively allocate its attention to some signals more than others, branch out and re-focus its reasoning at verbalization steps, and leverage its uncertainty to acqurie external information from sources such as retrievers and code interpreters in an iterative, timely manner. -->
+            Can we separately improve the reasoning and world knowledge of a model? Can language models branch out and refocus their intermediate reasoning at each verbalization step? How do models leverage uncertainty to acquire external information (i.e. retrievers, code interpreters) in an iterative and timely manner?
+          </li>
+          <li class="special"> <u>Training Signal</u>: We learn reasoning from textual, visual, spatial, temperal, etc. modalities that sometimes involve super-long-context correlation. Language models should learn from such rich signals too -- even if they only take textual inputs. </li>
+
+          <li class="special"><u>Reliable, Scalable Evaluation</u>: I believe that the best evaluation strategies are those that decompose broad behavioral preferences into measurable, interpretable abstractions. Even smaller benchmarks give more insights than unreliable / noisy ones.
+      </ul>
+        <!-- <br> -->
+        <!-- <br> -->
+        My friends and I founded <a href="https://ai-house.vercel.app/Framework/home.html" target="_blank">AI@Princeton</a>, Princeton's largest undergraduate AI club. We actively connect with AI researchers from the industry! 
+        <br>
+        <br>
+        I can be reached at jiatongy [at] princeton.edu.
+        </p>
+
+        <!-- <div class="col-xs-2">
+          <a href="https://scholar.google.com/citations?user=PppvsxkAAAAJ&hl=en" title="gscholar"><img
+              src="./images/logos/gscholar.png" style="max-height:40px;" class="img-responsive"></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="https://twitter.com/jiatongy_" title="twitter"><img src="./images/logos/twitter.png"
+              style="max-height:40px;" class="img-responsive"></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="https://github.com/jiatlskajf" title="github"><img src="./images/logos/github.png"
+              style="max-height:40px;" class="img-responsive"></a>
+        </div> -->
+      </div>
+
+    </div>
+    <hr>
+    <h3>Publications</h3>
+    <h4>2023</h4>
+    <ul>
+  
+        <li>
+          <div class="title">2d Quantum Breakdown Model with Krylov Subspace Many-Body Localization.</div>
+          <div><u>Xinyu Liu</u>>, Biao Lian </div>
+          <!-- <div>ICLR 2024, under review</div> -->
+          <a href="https://arxiv.org/abs/2311.10968">[paper]</a>
+        </li>
+        <li>
+          <div class="title">Enabling Large Language Models to Generate Text with Citations</div>
+          <div>Tianyu Gao, Howard Yen, <u>Jiatong Yu</u>, Danqi Chen</div>
+          <div>EMNLP 2023</div>
+          <a href="https://arxiv.org/abs/2305.14627">[paper]</a>
+        </li>
+      </ul>
+    <!-- <hr> -->
+    </ul>
+    <hr>
+    <h3>Coursework</h3>
+    <ul>
+      <li>
+        <div style="display: flex; justify-content: space-between;">
+          <div class="title">
+            <a href="https://princeton-nlp.github.io/cos484/">COS484</a> Natural Language Processing, <i> taught by Karthik Narasimhan </i>
+          </div>
+          <div>
+            <a href="https://cs.princeton.edu/~jiatongy/projects/cos484_report">[Final Project]</a>
+          </div>
+        </div>
+        <div><b>Teaching Assistant</b> for Spring 2023, <i>taught by Danqi Chen</i></div>
+      </li>
+      <li>
+        <div style="display: flex; justify-content: space-between;">
+          <div class="title">
+            <a href="https://www.cs.princeton.edu/~hy2/teaching/fall22-cos521/index.html">COS521</a> Advanced Algorithm Design, <i> taught by Matt Weinberg and Huacheng Yu </i>
+          </div>
+          <div>
+            <a href="https://arxiv.org/abs/2312.01634">[Preprint]</a>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div style="display: flex; justify-content: space-between;">
+          <div class="title">
+            <a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS597G</a> Understanding Large Language Models, <i> taught by Danqi Chen </i>
+          </div>
+          <div>
+            <a href="https://cs.princeton.edu/~jiatongy/projects/cos597G_report">[Final Project]</a>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div style="display: flex; justify-content: space-between;">
+          <div class="title">
+            <a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">ECE539B</a> Machine Learning and Wireless Systems, <i> taught by Vincent Poor </i>
+          </div>
+          <div>
+            <a href="https://cs.princeton.edu/~jiatongy/projects/ece539B_report">[Final Project]</a>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div style="display: flex; justify-content: space-between;">
+          <div class="title">
+            <a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS526</a> Neural Rendering, <i> taught by Felix Heide </i>
+          </div>
+          <div>
+            <a href="https://cs.princeton.edu/~jiatongy/projects/cos526_report">[Final Project]</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="title"><a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS598D</a> Systems and Machine Learning, <i> taught by Kai Li </i> </div>
+        <!-- <div><a href="https://arxiv.org/abs/2310.07641">[Final Project]</a></div> -->
+      </li>
+      <li>
+        <div class="title"><a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS512</a> Optimization for Machine Learning, <i> taught by Chi Jin</i> 
+        <!-- <div><a href="https://arxiv.org/abs/2310.07641">[Final Project]</a></div> -->
+      </li>
+      <li>
+        <div class="title"><a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS511</a> Theoretical Machine Learning, <i> taught by Chi Jin</i></div>
+        <!-- <div><a href="https://arxiv.org/abs/2310.07641">[Final Project]</a></div> -->
+      </li>
+      <li>
+        <div class="title"><a href="https://www.cs.princeton.edu/courses/archive/fall22/cos597G/">COS514</a> Fundamentals of Deep Learning, <i> taught by Sanjeev Arora </i> </div>
+        <!-- <div><a href="https://arxiv.org/abs/2310.07641">[Final Project]</a></div> -->
+      </li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      Last update: Dec. 15, 2023.
+      <br>
+      <br>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
